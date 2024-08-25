@@ -25,7 +25,7 @@ function App() {
     try {
       // Attempt to parse JSON input to validate
       const jsonObject = JSON.parse(jsonData);
-      const res = await fetch('http://localhost:3001/bfhl', {
+      const res = await fetch('https://bfhl-challenge-4v2r.onrender.com/bfhl', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
