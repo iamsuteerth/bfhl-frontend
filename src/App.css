@@ -1,0 +1,102 @@
+/* App.css */
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2, h3 {
+  margin-top: 0;
+  font-size: 1.2em; /* Reduced font size for headings */
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px; /* Reduced font size */
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 15px; /* Added space below the button */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 14px; /* Reduced font size */
+}
+
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px; /* Space between filters and response */
+}
+
+.multi-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.filterTag {
+  display: inline-flex; /* Changed from flex to inline-flex for better alignment */
+  align-items: center; /* Center the content vertically */
+  justify-content: space-between; /* Distribute space between content */
+  background-color: #007bff;
+  color: white;
+  padding: 4px 8px; /* Adjusted padding */
+  border-radius: 20px; /* Rounded corners */
+  font-size: 12px; /* Smaller font size */
+  max-width: fit-content; /* Keeps the tag width dynamic */
+  white-space: nowrap; /* Ensures text stays on one line */
+}
+
+.remove-button {
+  color: white;
+  height: fit-content;
+  width: fit-content;
+  margin-left: 8px; /* Adds spacing between text and button */
+  cursor: pointer;
+  font-size: 12px; /* Smaller font size for the 'x' */
+  display: flex; /* Allows for better centering of the button */
+  justify-content: center; /* Centers content horizontally */
+}
+
+.remove-button:hover {
+  color: #ff4c4c;
+}
+
+#filteredResponse {
+  background-color: #f0f0f0; /* Lighter grey background */
+  padding: 10px;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  margin-top: 15px; /* Space between filters and response */
+  font-size: 14px; /* Reduced font size */
+}
